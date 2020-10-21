@@ -14,7 +14,6 @@ CREATE TABLE users (
     updated_at TIMESTAMP NULL
 );
 
-CREATE UNIQUE INDEX role_id ON users (role_id);
 
 CREATE TABLE roles (
   id UUID NOT NULL PRIMARY KEY DEFAULT gen_random_uuid(),
